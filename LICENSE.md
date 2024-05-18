@@ -1,7 +1,9 @@
 # MIT License
 
 Copyright (c) 2024 Ash Trindade
+
 Copyright (c) 2015 Michael Phan-Ba <michael@mikepb.com>
+
 Copyright (C) 2011 by Isaac Wolkerstorfer
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

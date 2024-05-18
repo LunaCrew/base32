@@ -4,7 +4,9 @@
   "description": "Base32 encoding and decoding library",
   "main": "dist/index.js",
   "types": "index.d.ts",
-  "files": ["/dist"],
+  "files": [
+    "/dist"
+  ],
   "author": "Ash Trindade",
   "license": "MIT",
   "repository": {
@@ -14,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/LunaCrew/base32/issues"
   },
-  "homepage": "https://github.com/LunaCrew/base32/#README.md",
+  "homepage": "https://github.com/LunaCrew/base32/blob/main/README.md",
   "keywords": [
     "base32",
     "encoding",
