@@ -1,6 +1,5 @@
 # Summary
 
-* [Introduction](../README.md)
 * [Alphabets](Alphabets.md)
 * [Encoder](Encoder.md)
 * [Decoder](Decoder.md)
@@ -11,6 +10,6 @@
 
 <p align="center">
 
-| [🏠 Introduction](../README.md) | [Alphabets](Alphabets.md) ➡️|
+| [🏠 README](../README.md) | [Alphabets](Alphabets.md) ➡️|
 |:-------------------------------:|:----------------------------:|
 </p>

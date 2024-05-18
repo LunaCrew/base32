@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Base32 encoding and decoding library",
   "main": "dist/index.js",
-  "types": "index.d.ts",
+  "types": "src/index.d.ts",
   "files": [
     "/dist"
   ],
