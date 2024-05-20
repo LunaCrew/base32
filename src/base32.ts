@@ -1,4 +1,4 @@
-import { Mappings, RFC4648, Crockford, Base32Hex } from './types/Mappings'
+import { Mappings, RFC4648, Crockford, Base32Hex, Alphabet, CharMap } from './types/CustomTypes'
 
 /**
  * Generate a character map.
@@ -61,11 +61,8 @@ base32hex.charmap = charMap(base32hex.alphabet, base32hex.charmap)
 
 /**
  * Create a new `Decoder` with the given options.
- *
- * @param {DecoderOptions} [options]
- *   @param {string} [options.type] Supported Base-32 variants are:
+ *   @param {string} [type] Supported Base-32 variants are:
  *     "rfc4648", "base32hex", and "crockford".
- *   @param {CharacterMap} [options.charmap] Override the character map used in decoding.
  * @constructor
  */
 
@@ -75,29 +72,26 @@ class Decoder {
   carry: number
   charmap: { [key: string]: number }
 
-  constructor(options: { type: string; charmap: string }) {
+  constructor(type: CharMap) {
     this.buffer = []
     this.shift = 8
     this.carry = 0
     this.charmap = {}
 
-    if (options) {
-      if (options.charmap) this.charmap = options.charmap as unknown as { [key: string]: number }
-
-      switch (options.type) {
-        case 'rfc4648':
-          this.charmap = exports.rfc4648.charmap
-          break
-        case 'crockford':
-          this.charmap = exports.crockford.charmap
-          break
-        case 'base32hex':
-          this.charmap = exports.base32hex.charmap
-          break
-        default:
-          throw new Error('Invalid charmap type. Must be one of "rfc4648", "crockford", or "base32hex"')
-      }
+    switch (type) {
+      case 'rfc4648':
+        this.charmap = exports.rfc4648.charmap
+        break
+      case 'crockford':
+        this.charmap = exports.crockford.charmap
+        break
+      case 'base32hex':
+        this.charmap = exports.base32hex.charmap
+        break
+      default:
+        throw new Error('Invalid charmap type. Must be one of "rfc4648", "crockford", or "base32hex"')
     }
+
   }
 
   /**
@@ -184,7 +178,6 @@ class Decoder {
  * @param {EncoderOptions} [options]
  *   @param {string} [options.type] Supported Base-32 variants are:
  *     "rfc4648", "base32hex", and "crockford".
- *   @param {string} [options.alphabet] Override the alphabet used in encoding.
  *   @param {boolean} [options.lowercase] Use lower-case alphabet.
  * @constructor
  */
@@ -195,29 +188,27 @@ class Encoder {
   carry: number
   alphabet: string = ''
 
-  constructor(options: { type: string; alphabet: string; lowercase: boolean; }) {
+  constructor(options: { type: Alphabet; lowercase: boolean }) {
     this.buffer = ''
     this.shift = 3
     this.carry = 0
 
-    if (options) {
-      switch (options.type) {
-        case 'rfc4648':
-          this.alphabet = exports.rfc4648.alphabet
-          break
-        case 'crockford':
-          this.alphabet = exports.crockford.alphabet
-          break
-        case 'base32hex':
-          this.alphabet = exports.base32hex.alphabet
-          break
-        default:
-          throw new Error('Invalid alphabet type. Must be one of "rfc4648", "crockford", or "base32hex"')
-      }
-
-      if (options.alphabet) this.alphabet = options.alphabet
-      if (options.lowercase) this.alphabet = this.alphabet.toLowerCase()
+    switch (options.type) {
+      case 'rfc4648':
+        this.alphabet = exports.rfc4648.alphabet
+        break
+      case 'crockford':
+        this.alphabet = exports.crockford.alphabet
+        break
+      case 'base32hex':
+        this.alphabet = exports.base32hex.alphabet
+        break
+      default:
+        throw new Error('Invalid alphabet type. Must be one of "rfc4648", "crockford", or "base32hex"')
     }
+
+    if (options.lowercase) this.alphabet = this.alphabet.toLowerCase()
+
   }
 
   /**
@@ -301,24 +292,28 @@ class Encoder {
  * Convenience encoder.
  *
  * @param {ByteArray} buffer The byte array to encode.
- * @param {DecoderOptions} [options] Options to pass to the encoder.
+ * @param {EncoderOptions} [options]
+ * @param {string} [options.type] Supported Base-32 variants are:
+ *     "rfc4648", "base32hex", and "crockford".
+ *  @param {boolean} [options.lowercase] Use lower-case alphabet.
  * @return {string} The encoded string.
  */
 
-const encode = (buffer: Buffer, options: { type: string; alphabet: string; lowercase: boolean }): Buffer => {
+const encode = (buffer: Buffer, options: { type: Alphabet; lowercase: boolean }): Buffer => {
   return new Encoder(options).finalize(buffer)
 }
 
 /**
  * Convenience decoder.
  *
- * @param {string} string The string to decode.
- * @param {DecoderOptions} [options] Options to pass to the decoder.
+ * @param {string} input The string to decode.
+ * @param {string} [type] Supported Base-32 variants are:
+ *     "rfc4648", "base32hex", and "crockford".
  * @return {ByteArray} The decoded byte array.
  */
 
-const decode = (string: string, options: { type: string; charmap: string }): Buffer => {
-  return new Decoder(options).finalize(string)
+const decode = (input: string, type: CharMap): Buffer => {
+  return new Decoder(type).finalize(input)
 }
 
 // Exports.

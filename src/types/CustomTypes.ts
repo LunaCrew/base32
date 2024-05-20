@@ -26,3 +26,7 @@ export type Base32Hex = {
   alphabet: string;
   charmap: object
 }
+
+export type Alphabet = 'rfc4648' | 'crockford' | 'base32hex'
+
+export type CharMap = 'rfc4648' | 'crockford' | 'base32hex'
