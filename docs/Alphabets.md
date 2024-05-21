@@ -46,5 +46,5 @@ The choice of which encoding to use depends on the specific requirements of your
 
 ---
 
-| [🏠 Summary](Summary.md) | [Encoder](Encoder.md) ➡️|
-|:-------------------------:|:-----------------------:|
+| 🏠 [Summary](index.md) | [Encoder](Encoder.md) ➡️|
+|:-----------------------:|:-----------------------:|

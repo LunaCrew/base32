@@ -43,5 +43,5 @@ The encoding process in the`_write()` method is a bit complex. It involves bitwi
 
 ---
 
-| ⬅️ [Alphabets](Alphabets.md)| [🏠 Summary](Summary.md) | [Decoder](Decoder.md) ➡️|
-|:---------------------------:|:-------------------------:|:------------------------:|
+| ⬅️ [Alphabets](Alphabets.md)| 🏠 [Summary](index.md) | [Decoder](Decoder.md) ➡️|
+|:---------------------------:|:-----------------------:|:------------------------:|
