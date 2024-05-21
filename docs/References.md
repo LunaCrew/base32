@@ -12,6 +12,6 @@
 
 <p align="center">
 
-| ⬅️ [Decoder](Decoder.md) | [🏠 Summary](Summary.md) |
+| ⬅️ [Types](Types.md) | [🏠 Summary](Summary.md) |
 |:------------------------:|:-------------------------:|
 </p>

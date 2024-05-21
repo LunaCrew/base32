@@ -4,49 +4,41 @@
 /**
  * Create a new `Decoder` with the given options.
  *
- * @param {DecoderOptions} [options]
- *   @param {string} [options.type] Supported Base-32 variants are:
- *     "rfc4648", "base32hex", and "crockford".
- *   @param {CharacterMap} [options.charmap] Override the character map used in decoding.
+ * @param {string} [type] The charmap type to use for encoding. Default is 'rfc4648'.
  * @constructor
  */
 ```
 
 ## Class
 
-The `Decoder` class that is used for decoding base32 encoded strings.
-The class has four properties: `buffer`, `shift`, `carry`, and `charmap`.
+The class Decoder is used for decoding base32 encoded strings. The class has four private properties: `buffer`, `shift`, `carry`, and `charmap`.
 
-- `buffer`: is an array of numbers that holds the decoded bytes.
-- `shift`: is a number that represents the current shift in bits during the decoding process.
-- `carry`: is a number that holds the remaining bits that have not yet been fully processed.
-- `charmap`: is an object that maps characters to their corresponding values in the base32 encoding scheme.
+- The `buffer` is an array of numbers that holds the decoded values.
+- The `shift` and `carry` are used in the decoding process.
+- The `charmap` is an object that maps characters to their corresponding values in the base32 encoding scheme.
 
-## Constructor
+### Constructor
 
-The constructor of the `Decoder` class initializes these properties. It takes an options object as a parameter, which should contain a `type` and a `charmap`. 
+The constructor of the Decoder class accepts an optional parameter `type` which specifies the character map to use for decoding. By default, it uses the `rfc4648` character map. It can also use `crockford` or `base32hex` character maps. If an invalid type is provided, it throws an error.
 
-- `type`: is a string that specifies the type of base32 encoding scheme to use.
-- `charmap`: is a string that provides a custom character map for the encoding scheme.
+### Methods
 
-The constructor also sets up the character map based on the specified type.
+#### finalize()
 
-## Methods
+The finalize method finalizes the decoding process and returns the decoded `buffer`. It first decodes any remaining input, then flushes any remaining `buffer`. It also removes any leading and trailing spaces from the `buffer`.
 
-### Write
+#### _write()
 
-The `write()` method is used to decode a base32 encoded string. It takes a string as input, converts it to uppercase, and then processes each character in the string.
+The _write method is a private method that decodes an input string and writes it to the `buffer`.
 
-For each character, it looks up the corresponding value in the character map, shifts the bits accordingly, and adds the result to the buffer. The method also updates the `shift` and `carry` properties based on the current state of the decoding process.
+It first converts the input string to uppercase and splits it into an array of characters. Then it iterates over each character, ignores any padding, looks up the symbol for the character in the character map, and decodes it.
 
-### Finalize
-
-The `finalize()` method is used to finish the decoding process. It takes a string as `input`, decodes it if provided, and then flushes the remaining bits in the carry to the buffer. It also removes leading and trailing empty spaces from the buffer. The method returns the buffer as a `Buffer object`, which represents the decoded byte array.
+The decoded value is then written to the `buffer`. The method also updates the `shift` and `carry` properties based on the decoding process. The method returns the instance of the class, allowing for method chaining.
 
 ---
 
 <p align="center">
 
-| ⬅️ [Encoder](Encoder.md)| [🏠 Summary](Summary.md) | [References](References.md) ➡️|
+| ⬅️ [Encoder](Encoder.md)| [🏠 Summary](Summary.md) | [Types](Types.md) ➡️|
 |:------------------------:|:-------------------------:|:------------------------------:|
 </p>
