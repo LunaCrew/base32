@@ -35,11 +35,11 @@
     "test:coverage": "jest --verbose ./test --coverage",
     "dependencies:reset": "rm -rf node_modules && rm package-lock.json && npm install",
     "dependencies:fix": "node scripts/fixDependencies.js",
-    "clear:build": "rm -rf build",
+    "clear:build": "rm -rf dist",
     "clear:coverage": "rm -rf coverage",
     "prepare": "husky install",
     "help": "node scripts/help.js",
-    "pkg:publish": "rm -rf dist && npm run build && npm publish --access public"
+    "pkg:publish": "rm -rf dist && npm run dist && npm publish --access public"
   },
   "devDependencies": {
     "@types/express": "4.17.21",

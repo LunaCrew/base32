@@ -14,8 +14,7 @@
     "paths": {
       "src/*": ["src/*"],
       "test/*": ["test/*"]
-    },
-    "sourceMap": true
+    }
   },
   "include": ["**/*", "index.ts"],
   "exclude": ["node_modules", "coverage"]
