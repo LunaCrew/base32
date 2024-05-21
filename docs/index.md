@@ -1,5 +1,6 @@
 # Summary
 
+* [Usage](Usage.md)
 * [Alphabets](Alphabets.md)
 * [Encoder](Encoder.md)
 * [Decoder](Decoder.md)
@@ -8,5 +9,5 @@
 
 ---
 
-| [🏠 README](../README.md) | [Alphabets](Alphabets.md) ➡️|
-|:-------------------------:|:----------------------------:|
+| [🏠 README](../README.md) | [Usage](Usage.md) ➡️|
+|:-------------------------:|:--------------------:|
