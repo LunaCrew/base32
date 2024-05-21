@@ -24,7 +24,7 @@ export type Crockford = {
 
 export type Base32Hex = {
   alphabet: string;
-  charmap: object
+  charmap: { [key: string]: number }
 }
 
 export type Alphabet = 'rfc4648' | 'crockford' | 'base32hex'
