@@ -48,7 +48,6 @@ The RFC4648 type has two properties: `alphabet` and `charmap`.
 - The `alphabet` property is of type string. This means that any object of type RFC4648 should have an alphabet property that is a string.
 - The `charmap` property is an object itself with two optional properties: `0` and `1`. Both of these properties are of type number. The `?` after the property name indicates that these properties are optional. This means that an object of type RFC4648 may or may not have these properties, and if they do exist, they should be of type `number`.
 
-
 ## Crockford
 
 ```ts
@@ -87,8 +86,5 @@ The `{ [key: string]: number }` syntax is an index signature in TypeScript. It d
 
 ---
 
-<p align="center">
-
 | ⬅️ [Decoder](Decoder.md)| [🏠 Summary](Summary.md) | [References](References.md) ➡️|
 |:-----------------------:|:-------------------------:|:------------------------------:|
-</p>

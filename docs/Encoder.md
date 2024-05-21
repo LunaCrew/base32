@@ -12,7 +12,7 @@
 
 ## Class
 
-The class Encoder is used for encoding data using different types of alphabets. The alphabets are defined in the [CharMap file][] and are imported at the top of the file. The Encoder class has four private properties: `buffer`, `shift`, `carry`, and `alphabet`.
+The class Encoder is used for encoding data using different types of alphabets. The alphabets are defined in the [CharMap file](../src/base32/CharMap.ts) and are imported at the top of the file. The Encoder class has four private properties: `buffer`, `shift`, `carry`, and `alphabet`.
 
 - The `buffer` is an array of numbers that holds the encoded values.
 - The `shift` and `carry` are used in the encoding process.
@@ -43,10 +43,5 @@ The encoding process in the`_write()` method is a bit complex. It involves bitwi
 
 ---
 
-<p align="center">
-
 | ⬅️ [Alphabets](Alphabets.md)| [🏠 Summary](Summary.md) | [Decoder](Decoder.md) ➡️|
 |:---------------------------:|:-------------------------:|:------------------------:|
-</p>
-
-[CharMap file]: ../src/base32/CharMap.ts
