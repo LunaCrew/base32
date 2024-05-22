@@ -6,6 +6,7 @@
 * [Decoder](decoder)
 * [Types](types)
 * [References](references)
+* [License](../license)
 
 ---
 

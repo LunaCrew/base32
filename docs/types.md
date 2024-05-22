@@ -86,6 +86,6 @@ The `{ [key: string]: number }` syntax is an index signature in TypeScript. It d
 
 ---
 
-| [Index](index) | [Usage](usage) | [Alphabets](alphabets) | [Encoder](encoder) | [Decoder](decoder) | [📍 Types](types) | [References](references) |
+| [Index](index) | [Usage](usage) | [Alphabets](alphabets) | [Encoder](encoder) | [Decoder](decoder) | [📍 Types](types) | [References](references) | [License](../license) |
 
 > 📍 *You are here*
