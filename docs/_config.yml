@@ -6,6 +6,14 @@ url: https://lunacrew.github.io/base32
 
 heading_anchors: true
 nav_enabled: true
+nav:
+  - Home: /
+  - Usage: /usage
+  - Alphabet: /alphabet
+  - Encoder: /encoder
+  - Decoder: /decoder
+  - Types: /types
+  - References: /references
 
 search_enabled: true
 search:
