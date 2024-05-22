@@ -2,7 +2,7 @@
 
 Base32 encoding and decoding library for Node.js.
 
-For details on how it works, please check out the [documentation](/docs/Summary.md).
+For details on how it works, please check out the [documentation](/docs/index).
 
 ## Installation
 

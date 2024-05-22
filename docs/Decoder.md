@@ -37,5 +37,5 @@ The decoded value is then written to the `buffer`. The method also updates the `
 
 ---
 
-| ⬅️ [Encoder](Encoder.md)| 🏠 [Summary](index.md) | [Types](Types.md) ➡️|
-|:------------------------:|:----------------------:|:--------------------:|
+| ⬅️ [Encoder](Encoder)| 🏠 [Summary](index) | [Types](Types) ➡️ |
+|----------------------|----------------------|--------------------|

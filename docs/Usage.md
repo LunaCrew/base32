@@ -68,5 +68,5 @@ console.log(decoded); // Hello World!
 
 ---
 
-| 🏠 [Summary](index.md) | [Alphabets](Alphabets.md) ➡️ |
-|:----------------------:|:-----------------------------:|
+| 🏠 [Summary](index) | [Alphabets](Alphabets) ➡️ |
+|---------------------|----------------------------|
