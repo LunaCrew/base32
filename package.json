@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "types": "src/index.d.ts",
   "files": [
-    "/dist"
+    "/dist",
+    "src/index.d.ts"
   ],
   "author": "Ash Trindade",
   "license": "MIT",
@@ -16,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/LunaCrew/base32/issues"
   },
-  "homepage": "https://github.com/LunaCrew/base32/blob/main/README.md",
+  "homepage": "https://lunacrew.github.io/base32",
   "keywords": [
     "base32",
     "encoding",
