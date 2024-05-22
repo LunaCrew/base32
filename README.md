@@ -2,7 +2,7 @@
 
 Base32 encoding and decoding library for Node.js.
 
-For details on how it works, please check out the [documentation](https://lunacrew.github.io/base32/docs/index).
+For details on how it works, please check out the [documentation](https://lunacrew.github.io/base32).
 
 ## Installation
 

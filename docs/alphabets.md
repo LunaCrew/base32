@@ -46,6 +46,6 @@ The choice of which encoding to use depends on the specific requirements of your
 
 ---
 
-| [Index](index) | [Usage](Usage) | [📍 Alphabets](Alphabets) | [Encoder](Encoder) | [Decoder](Decoder) | [Types](Types) | [References](References) |
+| [Index](index) | [Usage](usage) | [📍 Alphabets](alphabets) | [Encoder](encoder) | [Decoder](decoder) | [Types](types) | [References](references) |
 
 > 📍 *You are here*

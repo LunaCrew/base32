@@ -43,6 +43,6 @@ The encoding process in the`_write()` method is a bit complex. It involves bitwi
 
 ---
 
-| [Index](index) | [Usage](Usage) | [Alphabets](Alphabets) | [📍Encoder](Encoder) | [Decoder](Decoder) | [Types](Types) | [References](References) |
+| [Index](index) | [Usage](usage) | [Alphabets](alphabets) | [📍Encoder](encoder) | [Decoder](decoder) | [Types](types) | [References](references) |
 
 > 📍 *You are here*
