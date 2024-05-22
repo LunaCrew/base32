@@ -1,5 +1,8 @@
-remote_theme: just-the-docs
+title: LunaCrew's Base32
+description: Base32 encoding and decoding library
+theme: just-the-docs
 color_scheme: dark
+url: https://lunacrew.github.io/base32
 
 heading_anchors: true
 nav_enabled: true
