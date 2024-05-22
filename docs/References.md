@@ -7,8 +7,3 @@
   * [RFC 4648](https://tools.ietf.org/html/rfc4648)
   * [Base32 Encoding](https://tools.ietf.org/html/rfc3548#section-5)
   * [Base32 Encoding with Extended Hex Alphabet](https://tools.ietf.org/html/rfc4648#section-7)
-
----
-
-| ⬅️ [Types](Types) | 🏠 [Summary](index) |
-|-------------------|----------------------|

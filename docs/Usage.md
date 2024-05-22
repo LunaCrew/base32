@@ -65,8 +65,3 @@ const decoder = new Decoder();
 const decoded = decoder.decode(encoded);
 console.log(decoded); // Hello World!
 ```
-
----
-
-| 🏠 [Summary](index) | [Alphabets](Alphabets) ➡️ |
-|---------------------|----------------------------|

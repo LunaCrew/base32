@@ -40,8 +40,3 @@ The finalize method takes a Buffer as a parameter, encodes the remaining `buffer
 The `_write()` method is a private method that takes a Buffer as a parameter and writes the encoded representation of the `buffer` to the internal `buffer`. It uses a for loop to encode each byte in the `buffer`. The method also saves the state of `shift` and `carry` for future use and returns the instance of the class for chaining.
 
 The encoding process in the`_write()` method is a bit complex. It involves bitwise operations to `shift` and manipulate the bits in each byte of the `buffer`. The comments in the code provide a visual representation of how the bits are shifted and combined to form the encoded symbols. The encoded symbols are then added to the internal `buffer`.
-
----
-
-| ⬅️ [Alphabets](Alphabets) | 🏠 [Summary](index) | [Decoder](Decoder) ➡️|
-|---------------------------|----------------------|-----------------------|
