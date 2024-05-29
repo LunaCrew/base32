@@ -1,18 +1,18 @@
 {
   "name": "@lunacrew/base32",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "Base32 encoding and decoding library",
   "main": "dist/index.js",
   "types": "src/index.d.ts",
   "files": [
-    "/dist",
+    "/dist/src",
     "src/index.d.ts"
   ],
   "author": "Ash Trindade",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:LunaCrew/base32.git"
+    "url": "https://github.com:LunaCrew/base32.git"
   },
   "bugs": {
     "url": "https://github.com/LunaCrew/base32/issues"
@@ -43,11 +43,9 @@
     "pkg:publish": "rm -rf dist && npm run dist && npm publish --access public"
   },
   "devDependencies": {
-    "@types/express": "4.17.21",
     "@types/jest": "29.5.11",
     "@types/module-alias": "2.0.4",
     "@types/node": "20.12.2",
-    "@types/supertest": "2.0.16",
     "@typescript-eslint/eslint-plugin": "6.13.2",
     "@typescript-eslint/parser": "6.13.2",
     "eslint": "8.57.0",
@@ -59,7 +57,6 @@
     "tsconfig-paths": "4.2.0",
     "typescript": "5.4.3"
   },
-  "dependencies": {},
   "directories": {
     "test": "test"
   }
