@@ -85,7 +85,6 @@ The Base32Hex type has two properties: `alphabet` and `charmap`.
 The `{ [key: string]: number }` syntax is an index signature in TypeScript. It denotes a type of objects which have string keys and number values. This means that any object of type `Base32Hex` should have a `charmap` property that is an object with string keys and number values.
 
 ---
-
-| [Index](index) | [Usage](usage) | [Alphabets](alphabets) | [Encoder](encoder) | [Decoder](decoder) | [📍 Types](types) | [References](references) | [License](../license) |
-
 > 📍 *You are here*
+
+| [Index](index) | [Usage](usage) | [Alphabets](alphabets) | [Encoder](encoder) | [Decoder](decoder) | [📍 Types](types) | [References](references) | [License](https://github.com/LunaCrew/base32/blob/main/LICENSE.md) |

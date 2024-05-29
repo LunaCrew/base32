@@ -6,7 +6,7 @@
 * [Decoder](decoder)
 * [Types](types)
 * [References](references)
-* [License](../license)
+* [License](https://github.com/LunaCrew/base32/blob/main/LICENSE.md)
 
 ---
 
@@ -17,6 +17,10 @@
   <img src="https://img.shields.io/npm/v/%40lunacrew%2Fbase32?label=version&logo=npm&labelColor=181717" alt="NPM Version" />
   <img src="https://img.shields.io/npm/dm/%40lunacrew%2Fbase32?logo=npm&labelColor=181717&color=blue" alt="NPM Downloads" />
   <img alt="NPM Type Definitions" src="https://img.shields.io/npm/types/%40lunacrew%2Fbase32?logo=npm&labelColor=181717">
+  </br>
+<a href="<https://www.npmjs.com/package/@lunacrew/base32>">
+  <img alt="npm install @lunacrew/base32" src="https://nodei.co/npm/@lunacrew/base32.png">
+</a>
 </p>
 
 ## Overview
@@ -24,3 +28,7 @@
 This library provides a simple and efficient way to encode and decode base32 strings in Node.js and the browser. It supports the RFC4648, Crockford, and Base32Hex character maps.
 
 The library consists of two main classes: `Encoder` and `Decoder`. The `Encoder` class is used for encoding strings, while the `Decoder` class is used for decoding base32 encoded strings.
+
+## Contributing
+
+Contributions are welcome! Visit the [GitHub repository](https://github.com/LunaCrew/base32) to get started.

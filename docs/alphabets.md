@@ -45,7 +45,6 @@ They are used for encoding binary data or representing numbers in a text format.
 The choice of which encoding to use depends on the specific requirements of your application, such as case-sensitivity, character set limitations, or compatibility with existing systems.
 
 ---
-
-| [Index](index) | [Usage](usage) | [📍 Alphabets](alphabets) | [Encoder](encoder) | [Decoder](decoder) | [Types](types) | [References](references) | [License](../license) |
-
 > 📍 *You are here*
+
+| [Index](index) | [Usage](usage) | [📍 Alphabets](alphabets) | [Encoder](encoder) | [Decoder](decoder) | [Types](types) | [References](references) | [License](https://github.com/LunaCrew/base32/blob/main/LICENSE.md) |
