@@ -11,7 +11,7 @@ declare module '@lunacrew/base32' {
      * @param {boolean} [lowercase] - Use lower-case alphabet. Defaults to false.
      * @returns {Buffer} The encoded string as a Buffer.
      */
-    static readonly encode: (input: string, type: string, lowercase: boolean) => Buffer
+    static readonly encode: (input: string, type?: string, lowercase?: boolean) => Buffer
 
     /**
      * Convenience decoder.
@@ -20,7 +20,7 @@ declare module '@lunacrew/base32' {
      * @param {CharMap} [type] - The character map type to use for decoding. Defaults to 'rfc4648'.
      * @returns {Buffer} The decoded data as a Buffer.
      */
-    static readonly decode: (input: string, type: string) => Buffer
+    static readonly decode: (input: string, type?: string) => Buffer
   }
 
   /**
@@ -31,7 +31,7 @@ declare module '@lunacrew/base32' {
    * @constructor
    */
   export class Encoder {
-    constructor(type: string, lowercase: boolean)
+    constructor(type?: string, lowercase?: boolean)
     finalize: (buffer: Buffer) => Buffer
   }
 
@@ -42,7 +42,7 @@ declare module '@lunacrew/base32' {
   * @constructor
   */
   export class Decoder {
-    constructor(type: string)
+    constructor(type?: string)
     finalize: (input: string) => Buffer
   }
 }
