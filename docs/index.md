@@ -20,7 +20,7 @@
 </p>
 
 <p align="center">
-  <a href="<https://www.npmjs.com/package/@lunacrew/base32>">
+  <a href="https://www.npmjs.com/package/@lunacrew/base32" target="_blank">
     <img alt="npm install @lunacrew/base32" src="https://nodei.co/npm/@lunacrew/base32.png">
   </a>
 </p>
