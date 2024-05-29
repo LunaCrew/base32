@@ -17,10 +17,12 @@
   <img src="https://img.shields.io/npm/v/%40lunacrew%2Fbase32?label=version&logo=npm&labelColor=181717" alt="NPM Version" />
   <img src="https://img.shields.io/npm/dm/%40lunacrew%2Fbase32?logo=npm&labelColor=181717&color=blue" alt="NPM Downloads" />
   <img alt="NPM Type Definitions" src="https://img.shields.io/npm/types/%40lunacrew%2Fbase32?logo=npm&labelColor=181717">
-  </br>
-<a href="<https://www.npmjs.com/package/@lunacrew/base32>">
-  <img alt="npm install @lunacrew/base32" src="https://nodei.co/npm/@lunacrew/base32.png">
-</a>
+</p>
+
+<p align="center">
+  <a href="<https://www.npmjs.com/package/@lunacrew/base32>">
+    <img alt="npm install @lunacrew/base32" src="https://nodei.co/npm/@lunacrew/base32.png">
+  </a>
 </p>
 
 ## Overview
