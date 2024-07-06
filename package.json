@@ -1,8 +1,8 @@
 {
   "name": "@lunacrew/base32",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "Base32 encoding and decoding library",
-  "main": "dist/index.js",
+  "main": "dist/src/index.js",
   "types": "src/index.d.ts",
   "files": [
     "/dist/src",
