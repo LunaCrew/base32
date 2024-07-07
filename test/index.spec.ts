@@ -1,4 +1,4 @@
-import { Base32, Encoder, Decoder } from 'src/index'
+import Base32, { Encoder, Decoder } from 'src/index'
 
 describe('Base32 Encoding and Decoding', () => {
   it('should encode and decode a string to base32', () => {

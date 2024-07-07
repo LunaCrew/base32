@@ -2,10 +2,12 @@ import Encoder from './base32/Encoder'
 import Decoder from './base32/Decoder'
 import { Alphabet, CharMap } from './types/CustomTypes'
 
+export { Encoder, Decoder }
+
 /**
- * Represents a Base32 encoding and decoding utility.
+ * Base32 encoding and decoding.
  */
-class Base32 {
+export default class Base32 {
   /**
    * Convenience encoder.
    *
@@ -31,5 +33,3 @@ class Base32 {
     return new Decoder(type).finalize(input)
   }
 }
-
-export { Base32, Encoder, Decoder }
