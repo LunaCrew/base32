@@ -1,6 +1,6 @@
 import Encoder from 'src/base32/Encoder'
 import Decoder from 'src/base32/Decoder'
-import { Base32 } from 'src/index'
+import Base32 from 'src/index'
 import { Alphabet, CharMap } from 'src/types/CustomTypes'
 
 describe('Base32 Encoding and Decoding', () => {
