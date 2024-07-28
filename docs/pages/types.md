@@ -80,6 +80,7 @@ The Base32Hex type has two properties: `alphabet` and `charmap`.
 - The `alphabet` property is of type string. This could be used to represent a set of characters that are valid in a base32 hexadecimal system.
 - The `charmap` property is an object that maps string keys to number values. This could be used to represent a mapping from characters in the base32 hexadecimal alphabet to their corresponding values.
 
-> For example, in a base32 hexadecimal system, the character `'A'` might map to the number `0`, `'B'` to `1`, and so on.
+!!! note
+    For example, in a base32 hexadecimal system, the character `'A'` might map to the number `0`, `'B'` to `1`, and so on.
 
 The `{ [key: string]: number }` syntax is an index signature in TypeScript. It denotes a type of objects which have string keys and number values. This means that any object of type `Base32Hex` should have a `charmap` property that is an object with string keys and number values.

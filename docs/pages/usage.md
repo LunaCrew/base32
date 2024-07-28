@@ -2,7 +2,7 @@
 
 ## Installation
 
-```bash
+```sh
 npm install @lunacrew/base32
 ```
 

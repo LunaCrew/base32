@@ -1,14 +1,12 @@
 # Encoder
 
-```ts
-/**
- * Create a new `Encoder` with the given options.
- *
- * @param {string} [type] The `alphabet` type to use for encoding. Default is 'rfc4648'.
- * @param {boolean} [lowercase] Use lower-case `alphabet`. Default is false.
- * @constructor
- */
- ```
+!!! note
+    Create a new `Encoder` with the given options.
+
+    ```ts
+    @param {string} [type] The `alphabet` type to use for encoding. Default is 'rfc4648'.
+    @param {boolean} [lowercase] Use lower-case `alphabet`. Default is false.
+    ```
 
 ## Class
 

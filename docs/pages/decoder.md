@@ -1,13 +1,11 @@
 # Decoder
 
-```ts
-/**
- * Create a new `Decoder` with the given options.
- *
- * @param {string} [type] The charmap type to use for encoding. Default is 'rfc4648'.
- * @constructor
- */
-```
+!!! note
+    Create a new `Decoder` with the given options.
+
+    ```ts
+    @param {string} [type] The charmap type to use for encoding. Default is 'rfc4648'.
+    ```
 
 ## Class
 
