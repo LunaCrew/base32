@@ -1,0 +1,62 @@
+site_name: LunaCrew | Base32
+site_description: Base32 encoding and decoding library
+site_author: LunaCrew
+site_url: https://lunacrew.github.io/base32
+
+repo_name: GitHub
+repo_url: https://github.com/LunaCrew/base32
+
+docs_dir: pages
+site_dir: site
+
+nav:
+  - Home: index.md
+  - Usage: usage.md
+  - Encoder: encoder.md
+  - Decoder: decoder.md
+  - Alphabets: alphabets.md
+  - Types: types.md
+  - References: references.md
+
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/github
+    admonition:
+      type: material/alert-circle
+  logo: assets/luna.png
+  favicon: assets/luna.png
+
+  palette:
+    # Default color palette
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+      primary: brown
+      accent: blue
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+      primary: brown
+      accent: blue
+
+  features:
+    - navigation.footer
+    - navigation.top
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/LunaCrew
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid

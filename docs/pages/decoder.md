@@ -34,8 +34,3 @@ The _write method is a private method that decodes an input string and writes it
 It first converts the input string to uppercase and splits it into an array of characters. Then it iterates over each character, ignores any padding, looks up the symbol for the character in the character map, and decodes it.
 
 The decoded value is then written to the `buffer`. The method also updates the `shift` and `carry` properties based on the decoding process. The method returns the instance of the class, allowing for method chaining.
-
----
-> 📍 *You are here*
-
-| [Index](index) | [Usage](usage) | [Alphabets](alphabets) | [Encoder](encoder) | [📍 Decoder](decoder) | [Types](types) | [References](references) | [License](https://github.com/LunaCrew/base32/blob/main/LICENSE.md) |

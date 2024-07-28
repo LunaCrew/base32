@@ -1,14 +1,4 @@
-# Index
-
-* [Usage](usage)
-* [Alphabets](alphabets)
-* [Encoder](encoder)
-* [Decoder](decoder)
-* [Types](types)
-* [References](references)
-* [License](https://github.com/LunaCrew/base32/blob/main/LICENSE.md)
-
----
+# Base32
 
 <p align="center">
   <img alt="GitHub License" src="https://img.shields.io/github/license/lunacrew/base32?labelColor=181717&logo=github">

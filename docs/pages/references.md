@@ -8,7 +8,3 @@
   * [Base32 Encoding](https://tools.ietf.org/html/rfc3548#section-5)
   * [Base32 Encoding with Extended Hex Alphabet](https://tools.ietf.org/html/rfc4648#section-7)
 
----
-> 📍 *You are here*
-
-| [Index](index) | [Usage](usage) | [Alphabets](alphabets) | [Encoder](encoder) | [Decoder](decoder) | [Types](types) | [📍 References](references) | [License](https://github.com/LunaCrew/base32/blob/main/LICENSE.md) |
